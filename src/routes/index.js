@@ -7,6 +7,7 @@ const notificationRouter = require("./notification");
 const billingRouter = require("./billing");
 const photoRouter = require("./photo");
 const revenueRouter = require("./revenue");
+const analyticsRouter = require("./analytics");
 
 const router = express.Router();
 router.use("/auth",authRoute);
@@ -18,5 +19,6 @@ router.use("/notification",notificationRouter);
 router.use("/billing",billingRouter);
 router.use("/photo",photoRouter);
 router.use("/revenue",revenueRouter);
+router.use("/analytics",analyticsRouter);
 
 module.exports = router;

@@ -4,6 +4,9 @@ const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const router = require("./routes/index");
 const bodyParser = require("body-parser");
+const logger = require("./config/logger");
+const helmet = require('helmet');
+const rateLimiter = require("./utils/rateLimit");
 
 // Load environment variables from .env file
 dotenv.config();
@@ -14,18 +17,21 @@ const app = express();
 // Middleware to parse JSON request bodies
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(helmet)
+app.use(rateLimiter)
+
 //  routes
 app.use("/api/v1", router);
 
 // Universal Error handler
 app.use((error, _req, res, _next) => {
-    const errorObj = {
-      message: error?.message || "Somethings Went Wrong",
-      status: error?.status || 500,
-    };
-  
-    res.status(errorObj.status).json(errorObj);
-  });
+  const errorObj = {
+    message: error?.message || "Somethings Went Wrong",
+    status: error?.status || 500,
+  };
+
+  res.status(errorObj.status).json(errorObj);
+});
 // Connect to MongoDB
 connectDB();
 // Define the port the server will listen on
@@ -34,8 +40,5 @@ const PORT = process.env.PORT || 3000;
 
 // Start the server and listen on the specified port
 server.listen(PORT, () => {
-    console.log(` server is running on port : ${PORT} `);
-  });
-
-
-
+  logger.info(` server is running on port : ${PORT} `);
+});
