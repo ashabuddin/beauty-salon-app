@@ -51,13 +51,13 @@ beauty-salon-app/
     └── hashPass.js
 ```
 ## Modular Breakdown for Development
--User Authentication and Authorization Module
--Customer Panel Module
--Owner Panel Module
--Admin Panel Module
--Notification System Module
--Billing System Module
--Photo Upload Module
--Revenue Model Implementation Module
--Analytics and Reporting Module
+- User Authentication and Authorization Module
+- Customer Panel Module
+- Owner Panel Module
+- Admin Panel Module
+- Notification System Module
+- Billing System Module
+- Photo Upload Module
+- Revenue Model Implementation Module
+- Analytics and Reporting Module
 
