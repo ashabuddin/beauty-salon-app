@@ -53,6 +53,17 @@ beauty-salon-app/
     └── rateLimit.js
     └── hashPass.js
 ```
+##Key Features for Different Panels
+###Customer Panel:
+
+- User Registration: Streamlined and easy sign-up processes.
+- Selecting Services: Enables users to choose preferred services and salons.
+- Profiles: Allows users to view profiles of beauticians or salon professionals.
+- Bookings: Facilitates the request and booking of appointments.
+- Payment: Incorporates secure payment methods for seamless transactions.
+- Reviews: Users can rate salons and experts based on service quality.
+- Subscriptions: Offers subscription models for certain apps.
+- Chat: Enables quick communication within the app.
 ## Modular Breakdown for Development
 - User Authentication and Authorization Module
 - Customer Panel Module
