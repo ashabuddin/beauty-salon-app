@@ -1,0 +1,19 @@
+POST http://localhost:4000/register
+Content-Type: application/json
+
+{
+    "name":"Ashab"
+}
+
+
+
+###
+POST http://localhost:4000/api/v1/articles
+Content-Type: application/json
+# Authorization: Bearer 
+
+
+{
+    "title":"Test title",
+    "body":"Test body"
+}
