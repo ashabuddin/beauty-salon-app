@@ -53,8 +53,7 @@ beauty-salon-app/
     └── rateLimit.js
     └── hashPass.js
 ```
-##Key Features for Different Panels
-
+## Key Features for Different Panels
 - **Customer Panel**
 - User Registration: Streamlined and easy sign-up processes.
 - Selecting Services: Enables users to choose preferred services and salons.
