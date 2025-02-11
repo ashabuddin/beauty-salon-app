@@ -54,8 +54,8 @@ beauty-salon-app/
     └── hashPass.js
 ```
 ##Key Features for Different Panels
--*Customer Panel:
 
+- **Customer Panel**
 - User Registration: Streamlined and easy sign-up processes.
 - Selecting Services: Enables users to choose preferred services and salons.
 - Profiles: Allows users to view profiles of beauticians or salon professionals.
